@@ -3,31 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Morpho Café & Studio Menu</title>
+  <title>My Café Menu</title>
   <style>
     body {
-      font-family: Gotham, sans-serif;
-      text-align: center;
-      background-image: url('background.png');
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg');
       background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
       background-position: center;
-      color: #ffe4b5;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #fff;
     }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6); /* semi-transparent overlay for readability */
+      border-radius: 10px;
+    }
+
     h1 {
-      color: #153610;
-      text-shadow: 1px 1px 2px #676b52;
+      color: #ffe4b5;
+      margin-bottom: 10px;
+    }
 
     p {
-      background-color: rgba(0,0,0,0.5);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 10px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
-  .menu-image {
+    .menu-image {
       width: 100%;
       height: auto;
       margin-bottom: 20px;
@@ -35,7 +43,7 @@
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
     }
 
-     @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
       h1 {
         font-size: 24px;
       }
@@ -43,13 +51,14 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to Morpho Café!</h1>
-  <p>Check out our delicious menu:</p>
+  <div class="container">
+    <h1>Welcome to Our Café!</h1>
+    <p>Check out our delicious menu:</p>
 
-  <!-- BIGGER IMAGES -->
-  <img src="MENU 1.1.png" alt="Food" class="menu-image" />
-  <img src="MENU 2.1.png" alt="Drinks" class="menu-image" />
-  <!-- Add more images as needed -->
-
+    <!-- Responsive Images -->
+    <img src="MENU 1.1" alt="Burger" class="menu-image" />
+    <img src="MENU 1.2" alt="Coffee" class="menu-image" />
+    <!-- Add more menu photos -->
+  </div>
 </body>
 </html>
